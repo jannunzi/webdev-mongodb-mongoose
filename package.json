@@ -1,0 +1,25 @@
+{
+  "name": "webdev-mongodb-mongoose",
+  "version": "1.0.0",
+  "description": "MongoDB and Mongoose Experiments and Lectures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jannunzi/webdev-mongodb-mongoose.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Mongoose",
+    "AngularJS",
+    "Node.js"
+  ],
+  "author": "Jose G. Annunziato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jannunzi/webdev-mongodb-mongoose/issues"
+  },
+  "homepage": "https://github.com/jannunzi/webdev-mongodb-mongoose#readme"
+}
