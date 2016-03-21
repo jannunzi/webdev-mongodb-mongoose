@@ -23,5 +23,7 @@ app.use(express.static(__dirname + '/public'));
 var ipaddress  = process.env.OPENSHIFT_NODEJS_IP   || "127.0.0.1";
 var port       = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
+require("./experiments/mongoose-schema/app.js")(app);
+
 // listen for incoming HTTP requests
 app.listen(port, ipaddress);
