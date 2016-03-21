@@ -1,3 +1,3 @@
 module.exports = function(app) {
-    console.log("app.js");
+    var blogService = require("./services/blog.service.server.js")(app);
 };

@@ -10,7 +10,7 @@
         return api;
 
         function postBlog(blog) {
-            console.log(blog);
+            $http.post("/api/experiments/mongoose-schema/blog", blog);
         }
     }
 })();
