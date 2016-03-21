@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head ng-app="MongooseSchemaApp">
+<html lang="en" ng-app="MongooseSchemaApp">
+<head>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -15,35 +15,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
 
     <script src="app.js"></script>
+    <script src="mongoose-schema.controller.js"></script>
 
     <title>Mongoose Schema</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ng-controller="MongooseSchemaController as model">
 
         <h1>Mongoose Schema</h1>
 
         <h2>Blog Schema</h2>
 
         Title
-        <input    ng-model="blog.title"  class="form-control"/>
+        <input    ng-model="model.blog.title"  class="form-control"/>
         Author
-        <input    ng-model="blog.author" class="form-control"/>
+        <input    ng-model="model.blog.author" class="form-control"/>
         Body
-        <textarea ng-model="blog.body"   class="form-control"></textarea>
+        <textarea ng-model="model.blog.body"   class="form-control"></textarea>
         Date
-        <input    ng-model="blog.date"   class="form-control" type="date"/>
+        <input    ng-model="model.blog.date"   class="form-control" type="date"/>
 
         Votes     </span><span class="glyphicon glyphicon-thumbs-up"></span>
-        <input    ng-model="blog.votes"  class="form-control" type="number"/>
+        <input    ng-model="model.blog.votes"  class="form-control" type="number"/>
 
         Favorites </span><span class="glyphicon glyphicon-star"></span>
-        <input    ng-model="blog.favs"   class="form-control" type="number"/>
+        <input    ng-model="model.blog.favs"   class="form-control" type="number"/>
 
-        <input    ng-model="blog.hidden" type="checkbox"/>
+        <input    ng-model="model.blog.hidden" type="checkbox"/>
         Hidden
 
-        <button   ng-click="post(blog)" class="btn btn-primary btn-block">
+        <button   ng-click="model.post(model.blog)" class="btn btn-primary btn-block">
             Post
         </button>
 
