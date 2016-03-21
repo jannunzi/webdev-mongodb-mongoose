@@ -7,10 +7,10 @@
 
         var vm = this;
 
-        vm.post = post;
+        vm.postBlog = postBlog;
 
-        function post(blog) {
-            MongooseSchemaService.post(blog);
+        function postBlog(blog) {
+            MongooseSchemaService.postBlog(blog);
         }
     }
 })();

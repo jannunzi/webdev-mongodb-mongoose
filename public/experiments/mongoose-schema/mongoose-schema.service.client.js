@@ -3,13 +3,13 @@
         .module("MongooseSchemaApp")
         .factory("MongooseSchemaService", mongooseSchemaService);
 
-    function mongooseSchemaService() {
+    function mongooseSchemaService($http) {
         var api = {
-            post: post
+            postBlog: postBlog
         };
         return api;
 
-        function post(blog) {
+        function postBlog(blog) {
             console.log(blog);
         }
     }
