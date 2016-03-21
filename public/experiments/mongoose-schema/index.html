@@ -23,6 +23,32 @@
 
         <h1>Mongoose Schema</h1>
 
+        <h2>Blog Schema</h2>
+
+        Title
+        <input    ng-model="blog.title"  class="form-control"/>
+        Author
+        <input    ng-model="blog.author" class="form-control"/>
+        Body
+        <textarea ng-model="blog.body"   class="form-control"></textarea>
+        Date
+        <input    ng-model="blog.date"   class="form-control" type="date"/>
+
+        Votes     </span><span class="glyphicon glyphicon-thumbs-up"></span>
+        <input    ng-model="blog.votes"  class="form-control" type="number"/>
+
+        Favorites </span><span class="glyphicon glyphicon-star"></span>
+        <input    ng-model="blog.favs"   class="form-control" type="number"/>
+
+        <input    ng-model="blog.hidden" type="checkbox"/>
+        Hidden
+
+        <button   ng-click="post(blog)" class="btn btn-primary btn-block">
+            Post
+        </button>
+
+        <br/><br/><br/><br/>
+
     </div>
 </body>
 </html>
