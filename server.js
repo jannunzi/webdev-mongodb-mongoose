@@ -3,6 +3,9 @@
 var express    = require('express');
 // create an express instance
 var app        = express();
+// install mongoose
+// npm install mongoose --save
+var mongoose = require("mongoose");
 
 app.use(express.static(__dirname + '/public'));
 
