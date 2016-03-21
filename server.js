@@ -7,6 +7,15 @@ var app        = express();
 // npm install mongoose --save
 var mongoose = require("mongoose");
 
+// install body-parser and multer
+// npm install body-parse --save
+// npm install multer --save
+var bodyParser = require('body-parser');
+var multer = require('multer'); // v1.0.5
+// configure body-parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(express.static(__dirname + '/public'));
 
 // use 127.0.0.1:3000 locally
