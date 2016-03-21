@@ -1,9 +1,9 @@
 (function() {
     angular
         .module("MongooseSchemaApp")
-        .factory("MongooseSchemaService", mongooseSchemaService);
+        .factory("BlogService", BlogService);
 
-    function mongooseSchemaService($http) {
+    function BlogService($http) {
         var api = {
             postBlog: postBlog
         };
